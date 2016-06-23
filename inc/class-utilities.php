@@ -338,7 +338,7 @@ class DMHStaff_Utilities {
 
 		wp_enqueue_style( 'dashicons' );
 
-		// wp_enqueue_style( 'dmhstaff-fonts', $this->fonts_url(), array(), null );
+		wp_enqueue_style( 'dmhstaff-fonts', $this->fonts_url(), array(), null );
 
 	} // enqueue_public()
 
@@ -393,7 +393,7 @@ class DMHStaff_Utilities {
 
 		$return 	= '';
 		$families 	= '';
-		$fonts[] 	= array( 'font' => 'Open Sans', 'weights' => '400,700', 'translate' => esc_html_x( 'on', 'Open Sans font: on or off', 'dmhstaff' ) );
+		$fonts[] 	= array( 'font' => 'Roboto', 'weights' => '400,700', 'translate' => esc_html_x( 'on', 'Roboto font: on or off', 'dmhstaff' ) );
 
 		foreach ( $fonts as $font ) {
 

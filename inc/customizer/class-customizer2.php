@@ -1139,7 +1139,7 @@ class DMHStaff_Customizer {
 
 		return array_map( 'sanitize_text_field', $multi_values );
 
-		$sanitizer 	= new Class_Names_Sanitize();
+		$sanitizer 	= new DMHStaff_Sanitize();
 		$new_value 	= $sanitizer->clean( $_POST[$meta[0]], $meta[1] );
 
 	} // sanitizer()
