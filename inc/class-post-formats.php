@@ -158,7 +158,7 @@ class DMHStaff_Post_Format_Metaboxes {
 
 		wp_enqueue_script( $this->theme_name . '-file-uploader', get_stylesheet_directory() . 'js/file-uploader.js', array( 'jquery' ), $this->version, true );
 
-		wp_enqueue_script( $this->theme_name . '-post-formats', get_template_directory_uri() . '/js/post-formats.js', array( 'jquery' ), $this->version, true );
+		wp_enqueue_script( $this->theme_name . '-post-formats', get_stylesheet_directory_uri() . '/js/post-formats.js', array( 'jquery' ), $this->version, true );
 
 	} // enqueue
 

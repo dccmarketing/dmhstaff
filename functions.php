@@ -10,27 +10,27 @@
 /**
  * Custom template tags for this theme.
  */
-require get_template_directory() . '/inc/template-tags.php';
+require get_stylesheet_directory() . '/inc/template-tags.php';
 
 /**
  * Load The image function library
  */
-require get_template_directory() . '/inc/imagekit.php';
+require get_stylesheet_directory() . '/inc/imagekit.php';
 
 /**
  * Load Slushman Themekit
  */
-require get_template_directory() . '/inc/themekit.php';
+require get_stylesheet_directory() . '/inc/themekit.php';
 
 /**
  * Load Main Menu Walker
  */
-require get_template_directory() . '/inc/main-menu-walker.php';
+require get_stylesheet_directory() . '/inc/main-menu-walker.php';
 
 /**
  * Load Main Menu Walker
  */
-require get_template_directory() . '/inc/class-controller.php';
+require get_stylesheet_directory() . '/inc/class-controller.php';
 
 /**
  * Begins execution of the plugin.

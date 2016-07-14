@@ -152,7 +152,7 @@ class DMHStaff_Metaboxes {
 		if ( ! is_admin() ) { return; }
 		if ( 'posttypename' != $post->post_type ) { return; }
 
-		include( get_template_directory() . '/template-parts/metabox-' . $params['args']['file'] . '.php' );
+		include( get_stylesheet_directory() . '/template-parts/metaboxes/' . $params['args']['file'] . '.php' );
 
 	} // metabox()
 
@@ -164,7 +164,7 @@ class DMHStaff_Metaboxes {
 		if ( ! is_admin() ) { return; }
 		if ( 'posttypename' !== $post->post_type ) { return; }
 
-		include( get_template_directory() . '/template-parts/metabox-subtitle.php' );
+		include( get_stylesheet_directory() . '/template-parts/metaboxes/subtitle.php' );
 
 	} // metabox_subtitle()
 
@@ -201,7 +201,7 @@ class DMHStaff_Metaboxes {
 
 		$nonce_check = $this->check_nonces( $_POST );
 
-		if ( 0 < $nonce_check ) { return $post_id; }
+		if ( 0 >= $nonce_check ) { return $post_id; }
 
 		$metas = $this->get_metabox_fields();
 

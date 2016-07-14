@@ -1019,7 +1019,7 @@ class DMHStaff_Customizer {
 
 		foreach ( $files as $file ) {
 
-			require_once( trailingslashit( get_template_directory() ) . 'inc/customizer/' . $file );
+			require_once( trailingslashit( get_stylesheet_directory() ) . 'inc/customizer/' . $file );
 
 		}
 

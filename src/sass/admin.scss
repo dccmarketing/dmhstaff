@@ -16,3 +16,15 @@
 		display: none;
 	}
 }
+
+.image-upload-preview {
+	background-repeat 	: no-repeat;
+	background-position : center center;
+	background-size 	: cover;
+	height 				: 150px;
+	width 				: 150px;
+
+	&.bordered {
+		border 				: 4px dashed #b4b9be;
+	}
+}

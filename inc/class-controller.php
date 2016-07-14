@@ -74,47 +74,47 @@ class DMHStaff_Controller {
 		 * The class responsible for orchestrating the actions and filters of the
 		 * core theme.
 		 */
-		require_once get_template_directory() . '/inc/class-loader.php';
+		require_once get_stylesheet_directory() . '/inc/class-loader.php';
 
 		/**
 		 * The class responsible for sanitizing user input
 		 */
-		require_once get_template_directory() . '/inc/class-sanitize.php';
+		require_once get_stylesheet_directory() . '/inc/class-sanitize.php';
 
 		/**
 		 * The class of opinionated, utility functions.
 		 */
-		require_once get_template_directory() . '/inc/class-utilities.php';
+		require_once get_stylesheet_directory() . '/inc/class-utilities.php';
 
 		/**
 		 * The class of functions related to menus.
 		 */
-		require_once get_template_directory() . '/inc/class-menukit.php';
+		require_once get_stylesheet_directory() . '/inc/class-menukit.php';
 
 		/**
 		 * The class of functions related to theme hooks.
 		 */
-		require_once get_template_directory() . '/inc/class-themehooks.php';
+		require_once get_stylesheet_directory() . '/inc/class-themehooks.php';
 
 		/**
 		 * The class responsible for defining all actions relating to metaboxes.
 		 */
-		require_once get_template_directory() . '/inc/class-metaboxes.php';
+		require_once get_stylesheet_directory() . '/inc/class-metaboxes.php';
 
 		/**
 		 * The class responsible for defining all actions relating to post formats.
 		 */
-		require_once get_template_directory() . '/inc/class-post-formats.php';
+		require_once get_stylesheet_directory() . '/inc/class-post-formats.php';
 
 		/**
 		 * The class responsible for defining all actions relating to metaboxes.
 		 */
-		require_once get_template_directory() . '/inc/class-automattic.php';
+		require_once get_stylesheet_directory() . '/inc/class-automattic.php';
 
 		/**
 		 * The class responsible for defining all actions relating to metaboxes.
 		 */
-		require_once get_template_directory() . '/inc/customizer/class-customizer.php';
+		require_once get_stylesheet_directory() . '/inc/customizer/class-customizer.php';
 
 		$this->loader 		= new DMHStaff_Loader();
 		$this->sanitizer 	= new DMHStaff_Sanitize();

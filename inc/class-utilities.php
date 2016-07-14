@@ -46,7 +46,7 @@ class DMHStaff_Utilities {
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 */
-		load_theme_textdomain( 'dmhstaff', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'dmhstaff', get_stylesheet_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -334,7 +334,7 @@ class DMHStaff_Utilities {
 
 		wp_enqueue_script( 'enquire', '//cdnjs.cloudflare.com/ajax/libs/enquire.js/2.1.2/enquire.min.js', array(), $this->version, true );
 
-		wp_enqueue_script( 'dmhstaff-navigation', get_template_directory_uri() . '/assets/js/public.min.js', array( 'jquery', 'enquire' ), $this->version, true );
+		wp_enqueue_script( 'dmhstaff-navigation', get_stylesheet_directory_uri() . '/assets/js/public.min.js', array( 'jquery', 'enquire' ), $this->version, true );
 
 		wp_enqueue_style( 'dashicons' );
 
